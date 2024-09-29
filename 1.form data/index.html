@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form onsubmit="handleEventChange(event)">
+    <h1>Appointment Details</h1>
+    <label for="fname">fname</label>
+    <input type="text" id="fname" name="name" >
+    <label>
+      <button>Submit</button>
+    </label>
+  </form>
+  <script> 
+  function handleEventChange(event){
+    event.preventDefault()
+console.log(event.target.name.value)
+  }
+
+  </script>
+  
+</body>
+</html>
